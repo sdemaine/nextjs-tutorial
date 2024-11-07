@@ -1,5 +1,8 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
  
+// this is to enable PPR for this layout, so that the children components can be rendered incrementally
+export const experimental_ppr = true;
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
